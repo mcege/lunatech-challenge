@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+  lunatech-countries:
+    build: ./countries/1.0.1
+    image: lunatech:countries_1.0.1
+    container_name: lunatech-countries_1.0.1
+    networks:
+      - lunatech
+  lunatech-airports:
+    build: ./airports/1.0.1
+    image: lunatech:airports_1.0.1
+    container_name: lunatech-airports_1.0.1
+    networks:
+      - lunatech
+
+networks:
+   lunatech:
+     external:
+       name: lunatech
