@@ -39,7 +39,7 @@ make build_airports AIRPORTS_VERSION=1.1.0
 make update AIRPORTS_VERSION=1.1.0
 ```
 
-### Else if you just want to run a single script and up&run the initial state:
+### Else if you just want to run a single script and up&run the initial state:
 ```bash
 ./script_for_initial_state.sh
 ```
