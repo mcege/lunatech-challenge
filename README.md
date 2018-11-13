@@ -41,7 +41,7 @@ make update AIRPORTS_VERSION=1.1.0
 
 ### Else if you just want to run a single script and up&run the initial state:
 ```bash
-chmod +x script_for_initial_state.sh && ./script_for_initial_state.sh
+./script_for_initial_state.sh
 ```
 
 ## Test
