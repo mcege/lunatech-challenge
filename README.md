@@ -47,3 +47,11 @@ make update AIRPORTS_VERSION=1.1.0
 ## Test
 
 Please check [.json](https://github.com/mcege/lunatech-challenge/blob/master/lunatech.postman_collection.json) which had been exported from Postman, includes several GET requests for the testing purposes.
+
+## Design decision and chosen technologies
+
+Docker had been chosen to run two isolated services. There is no direct access from outer world to any of those services, as well as no communication between those two services as well. As Ihad received .jar files, I thought containerizing them would be the right choice and as Docker is the most widely used containerization solution, I wanted to stick with that. [rkt](https://coreos.com/rkt/) could have been used as well.
+
+I picked the option of reverse proxying those two servers and serve them through the 8000 port of the localhost and for that, I used Nginx. I picked Nginx, honestly because it's the web server solution with which I have the most experience and familiarity. [Traefik](https://traefik.io), [HAProxy](http://www.haproxy.org), [Apache HTTP Server](https://httpd.apache.org) are other well known alternatives for either load balancing, or reverse proxying.
+
+For updating the airports .jar with the 1.1.0 version, I had several options such as blue/green deployment solutions with [Docker Swarm](https://docs.docker.com/engine/swarm/), or rancher-compose tool of [Rancher](https://rancher.com), but I wanted to deliver the task as simple as possible, without forcing the recipient to install even more programs, applications, etc.  
