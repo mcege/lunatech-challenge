@@ -56,7 +56,7 @@ I picked the option of reverse proxying those two servers and serve them through
 
 For updating the airports .jar with the 1.1.0 version, I had several options such as blue/green deployment solutions with [Docker Swarm](https://docs.docker.com/engine/swarm/), or rancher-compose tool of [Rancher](https://rancher.com), but I wanted to deliver the task as simple as possible, without forcing the recipient to install even more programs, applications, etc.  
 
-## CI/CD
+## CI/CD
 
 I added a declarative pipeline [Jenkinsfile](https://github.com/mcege/lunatech-challenge/blob/master/Jenkinsfile), in order this to work, the countries_version should be parametrized in the docker-compose file, same as airports_version field.  
 
