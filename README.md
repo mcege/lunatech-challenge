@@ -46,7 +46,7 @@ make update AIRPORTS_VERSION=1.1.0
 
 ## Test
 
-Please check [.json](https://github.com/mcege/lunatech-challenge/blob/master/lunatech.postman_collection.json) which had been exported from Postman, includes several GET requests for the testing purposes.
+Please check the [.json file](https://github.com/mcege/lunatech-challenge/blob/master/lunatech.postman_collection.json) which had been exported from Postman, includes several GET requests for the testing purposes.
 
 ## Design decision and chosen technologies
 
