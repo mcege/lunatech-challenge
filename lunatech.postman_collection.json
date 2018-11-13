@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "61dd34b5-05ed-4a1a-99a6-a4166965e97d",
+		"name": "lunatech",
+		"description": "lunatech devops challenge test GET requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"countries"
+					]
+				},
+				"description": "Get countries"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports"
+					]
+				},
+				"description": "Get airports"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / 01CT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports/01CT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports",
+						"01CT"
+					]
+				},
+				"description": "Get airports 01CT"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / eham",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports/EHAM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports",
+						"EHAM"
+					]
+				},
+				"description": "Get countries EHAM"
+			},
+			"response": []
+		},
+		{
+			"name": "get countries / wf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/countries/WF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"countries",
+						"WF"
+					]
+				},
+				"description": "Get countries WF"
+			},
+			"response": []
+		},
+		{
+			"name": "get countries / an",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/countries/AN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"countries",
+						"AN"
+					]
+				},
+				"description": "Get countries AN"
+			},
+			"response": []
+		},
+		{
+			"name": "get search / tr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/search/TR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"TR"
+					]
+				},
+				"description": "Get search TR"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / full 0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports?full=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports"
+					],
+					"query": [
+						{
+							"key": "full",
+							"value": "0"
+						}
+					]
+				},
+				"description": "Get airports full=0"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / full 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports?full=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports"
+					],
+					"query": [
+						{
+							"key": "full",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Get airports full=0"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / es",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports/ES",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports",
+						"ES"
+					]
+				},
+				"description": "Get airports ES"
+			},
+			"response": []
+		},
+		{
+			"name": "get airports / mr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/airports/MR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"airports",
+						"MR"
+					]
+				},
+				"description": "Get airports MR"
+			},
+			"response": []
+		},
+		{
+			"name": "get health / live",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/health/live",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"health",
+						"live"
+					]
+				},
+				"description": "Get health/live"
+			},
+			"response": []
+		},
+		{
+			"name": "get health / ready",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/health/ready",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"health",
+						"ready"
+					]
+				},
+				"description": "Get health/ready"
+			},
+			"response": []
+		}
+	]
+}
