@@ -4,20 +4,37 @@
 
 - docker<br/>
 - docker-compose<br/>
-- git
+- git<br/>
 - proper connection to hub.docker.com
 
 ## Run
 
+### If docker-compose is fine:
+
 ```bash
 git clone https://github.com/mcege/lunatech-challenge.git
 docker network create lunatech
+cd lunatech-challenge
 # Pay attention to the AIRPORTS_VERSION variable
 AIRPORTS_VERSION=1.0.1 docker-compose up -d --build
 AIRPORTS_VERSION=1.1.0 docker-compose build lunatech-airports
 # Update the running lunatech-airports docker image w'out effecting... 
 # ...neither of nginx, or lunatech-countries containers
 AIRPORTS_VERSION=1.1.0 docker-compose up --no-deps -d lunatech-airports
+```
+
+### Else if you are a make enthusiast:
+
+```bash
+git clone https://github.com/mcege/lunatech-challenge.git
+docker network create lunatech
+cd lunatech-challenge
+# Pay attention to the AIRPORTS_VERSION variable
+make run airports_version=1.0.1
+make build_airports airports_version=1.1.0
+# Update the running lunatech-airports docker image w'out effecting...
+# ...neither of nginx, or lunatech-countries containers
+make update airports_version=1.1.0
 ```
 
 ## Test
