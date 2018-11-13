@@ -48,7 +48,7 @@ make update AIRPORTS_VERSION=1.1.0
 
 Please check the [.json file](https://github.com/mcege/lunatech-challenge/blob/master/lunatech.postman_collection.json) which had been exported from Postman, includes several GET requests for the testing purposes.
 
-## Design decision and chosen technologies
+## Design decisions and chosen technologies
 
 Docker had been chosen to run two isolated services. There is no direct access from outer world to any of those services, as well as no communication between those two services as well. As Ihad received .jar files, I thought containerizing them would be the right choice and as Docker is the most widely used containerization solution, I wanted to stick with that. [rkt](https://coreos.com/rkt/) could have been used as well.
 
