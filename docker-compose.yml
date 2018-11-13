@@ -8,9 +8,9 @@ services:
     networks:
       - lunatech
   lunatech-airports:
-    build: ./airports/1.0.1
-    image: lunatech:airports_1.0.1
-    container_name: lunatech-airports_1.0.1
+    build: ./airports/${AIRPORTS_VERSION}
+    image: lunatech:airports_${AIRPORTS_VERSION}
+    container_name: lunatech-airports_${AIRPORTS_VERSION}
     networks:
       - lunatech
   lunatech-nginx:
